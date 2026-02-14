@@ -69,6 +69,9 @@ List the key features of your project:
 #### Installation
 bash
 pip install flask
+git clone https://github.com/your-username/PeriodCare.git
+cd PeriodCare
+
 
 
 #### Run
