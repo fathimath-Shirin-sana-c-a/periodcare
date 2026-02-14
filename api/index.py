@@ -3,7 +3,13 @@ print("Starting the Flask application...")
 from flask import Flask, render_template, request
 from datetime import datetime, timedelta
 
-app = Flask(__name__)
+import os
+
+app = Flask(
+    __name__,
+    template_folder=os.path.join(os.path.dirname(__file__), '../templates')
+)
+
 
 # ---------------- HOME PAGE ----------------
 @app.route('/', methods=['GET', 'POST'])
