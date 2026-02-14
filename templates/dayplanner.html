@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Period Day Planner</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffe6f2, #ffd6eb);
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #ff3385;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #ff3385;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌸 Full Day Period Planner</h1>
+
+{% for time, tasks in schedule.items() %}
+<div class="card">
+    <h2>{{ time }}</h2>
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+
+<a href="/">⬅ Back to Home</a>
+
+</body>
+</html>

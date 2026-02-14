@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Stock Checklist</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #ffe6f0;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px pink;
+        }
+
+        button {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+            color: #ff3385;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>🛍 Product Stock Checklist</h2>
+
+    <form method="POST">
+        <input type="checkbox" name="products" value="Sanitary Pads"> Sanitary Pads <br><br>
+        <input type="checkbox" name="products" value="Tampons"> Tampons <br><br>
+        <input type="checkbox" name="products" value="Pain Relief Tablets"> Pain Relief Tablets <br><br>
+        <input type="checkbox" name="products" value="Herbal Tea"> Herbal Tea <br><br>
+        <input type="checkbox" name="products" value="Heating Pad"> Heating Pad <br><br>
+        <input type="checkbox" name="products" value="period panties"> period panties <br><br>
+
+        <button type="submit">Check Stock</button>
+    </form>
+
+    {% if message %}
+        <div class="result">
+            {{ message }}
+        </div>
+    {% endif %}
+
+    <a href="/">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>

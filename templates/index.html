@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PeriodCare</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #ffe6f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            width: 320px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 8px;
+            width: 90%;
+        }
+
+        button {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        .popup {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff0f6;
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>🌸 PeriodCare 🌸</h2>
+
+    <form method="POST">
+        <input type="date" name="last_date" required>
+        <input type="number" name="cycle_length" value="28">
+        <button type="submit">Predict</button>
+      <a href="/stock" style="display:block; margin-top:15px; color:#ff3385;">
+🛍 Check Product Stock
+</a>
+
+<a href="/symptoms" style="display:block; margin-top:15px; color:#ff3385;">
+🌸 Today Symptoms
+</a>
+
+<a href="/dayplanner" style="display:block; margin-top:15px; color:#ff3385;">
+🌸 Full Day Planner
+</a>
+
+
+    </form>
+{% if submitted %}
+<div class="popup">
+    <h3>🌸 Prediction Result 🌸</h3>
+    <p>{{ result|safe }}</p>
+</div>
+{% endif %}
+
+
+</div>
+
+</body>
+</html>

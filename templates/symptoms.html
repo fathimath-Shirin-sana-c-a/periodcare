@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptoms Tracker</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #ffe6f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            width: 320px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        button {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff0f6;
+            border-radius: 8px;
+        }
+
+        a {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #ff3385;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>🌼 Today's Symptoms</h2>
+
+    <form method="POST">
+        <label><input type="checkbox" name="symptoms" value="Cramps"> Cramps</label><br>
+        <label><input type="checkbox" name="symptoms" value="Mood Swings"> Mood Swings</label><br>
+        <label><input type="checkbox" name="symptoms" value="Headache"> Headache</label><br>
+        <label><input type="checkbox" name="symptoms" value="Bloating"> Bloating</label><br>
+
+        <button type="submit">Get Tips</button>
+    </form>
+
+    {% if tips %}
+    <div class="result">
+        <h3>🌸 Care Tips</h3>
+        <p>{{ tips|safe }}</p>
+    </div>
+    {% endif %}
+
+    <a href="/">⬅ Back to Prediction</a>
+</div>
+</body>
+</html>
