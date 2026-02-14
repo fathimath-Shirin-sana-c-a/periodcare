@@ -65,7 +65,8 @@ List the key features of your project:
 ## Implementation
 
 ### For Software:
-
+Any modern web browser (Chrome, Edge, Firefox, etc.)
+Internet connection (for Supabase database)
 #### Installation
 bash
 pip install flask
@@ -110,13 +111,61 @@ This screenshot shows the Full Day Period Planner feature of PeriodCare. It prov
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+![WhatsApp Image 2026-02-14 at 9 07 40 AM](https://github.com/user-attachments/assets/c210a14a-02f0-4936-b13f-c0ba43ff734e)
+PeriodCare follows a simple client-server architecture:
+Client Layer (Frontend)
+Built using HTML and CSS
+Collects user inputs through forms
+Displays prediction results and care suggestions
+Application Layer (Flask Backend)
+Handles routing (/, /symptoms, /stock, /planner)
+Processes menstrual cycle calculations
+Generates phase-based tips
+Checks product availability
+Returns rendered templates
+Logic Layer (Business Logic)
+Date calculations using datetime
+Conditional logic for phase detection
+Dictionary mapping for symptom advice
+List comparison for stock validation
+Data Handling
+No database used
+Data processed temporarily (session-based)
+Privacy-friendly (no storage)
+🎯 Tech Stack Interaction
+Browser → sends form data
+Flask → processes request
+Python → performs calculations
+HTML Templates → render output
+Browser → displays results
 
 **Application Workflow:**
+![WhatsApp Image 2026-02-14 at 9 09 33 AM](https://github.com/user-attachments/assets/d2275225-0586-4dd2-98ca-3616b6e3c515)
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+PeriodCare follows a simple and user-friendly workflow:
+User Input Stage
+The user enters the last menstrual date and average cycle length.
+The user clicks the Predict button.
+Backend Processing
+The Flask server receives the form data.
+Python’s datetime module calculates:
+Next period date
+Ovulation date
+Fertile window
+The system determines the current menstrual phase.
+A personalized health tip is generated based on the detected phase.
+Result Display
+The calculated results are rendered using HTML templates.
+The prediction results are shown in a styled output card.
+Additional Feature Navigation The user can navigate to:
+Symptoms Page → Select symptoms and receive care tips.
+Stock Checklist Page → Check essential period products.
+Full Day Planner Page → View structured morning, afternoon, and evening care plan.
+User Experience
+No data is stored permanently.
+All processing is done instantly on the server.
+The interface remains simple and easy to use.
+
 
 ---
 
@@ -130,17 +179,5 @@ This screenshot shows the Full Day Period Planner feature of PeriodCare. It prov
 ![Schematic](Add your schematic diagram here)
 *Add caption explaining the schematic*
 
-#### Build Photos
+project demo video
 
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
----
