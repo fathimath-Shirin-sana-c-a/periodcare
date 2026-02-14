@@ -83,16 +83,25 @@ python app.py
 ### For Software:
 
 #### Screenshots (Add at least 3)
-<img width="908" height="900" alt="Screenshot 2026-02-14 200818" src="https://github.com/user-attachments/assets/6d611a65-7eeb-49f7-8de2-8c7e21f6eb39" />
+<img width="1905" height="911" alt="Screenshot 2026-02-14 200426" src="https://github.com/user-attachments/assets/179d3cb9-f198-4188-82a5-c1e5daec49df" />
 
+This screenshot shows the main interface of PeriodCare. Users can enter their last period date and cycle length to predict upcoming periods and ovulation cycles. The dashboard also provides quick navigation links to additional features including Product Stock Checklist, Symptom Tracker, and Full Day Planner.
 
-*Add caption explaining what this shows*
+<img width="1239" height="898" alt="Screenshot 2026-02-14 200616" src="https://github.com/user-attachments/assets/50c0ee20-8e60-4849-b567-e9404110b23d" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+This screenshot displays the prediction results after entering the last period date and cycle length. The system calculates the next period date, ovulation date, and fertile window. It also identifies the current menstrual phase and provides a personalized health tip based on the phase.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="795" height="639" alt="Screenshot 2026-02-14 200634" src="https://github.com/user-attachments/assets/411c3435-bfd4-45cf-a426-5be7fe7e5c87" />
+This screenshot shows the Product Stock Checklist feature of PeriodCare. Users can select available menstrual essentials such as sanitary pads, tampons, pain relief tablets, herbal tea, heating pad, and period panties. The system checks for missing items and alerts users to ensure they are prepared in advance.
+
+<img width="660" height="439" alt="Screenshot 2026-02-14 200737" src="https://github.com/user-attachments/assets/9de72a76-0e40-47ba-b9e5-e86b81a54f39" />
+This screenshot shows the Today's Symptoms page of PeriodCare. Users can select symptoms such as cramps, mood swings, headache, or bloating. After clicking “Get Tips,” the system provides personalized self-care suggestions to help manage the selected symptoms.
+
+<img width="831" height="810" alt="Screenshot 2026-02-14 200752" src="https://github.com/user-attachments/assets/56a3ba6e-2e94-480f-b632-10601aec8e4d" />
+This screenshot displays the symptom selection and personalized care tips feature of PeriodCare. After selecting specific symptoms such as cramps or headache, the system generates tailored self-care advice including home remedies, hydration tips, and lifestyle suggestions to help manage discomfort effectively.
+
+<img width="908" height="900" alt="Screenshot 2026-02-14 200818" src="https://github.com/user-attachments/assets/7b6721b2-6fe1-464f-b8d6-2b3136114a0f" />
+This screenshot shows the Full Day Period Planner feature of PeriodCare. It provides a structured daily self-care plan divided into Morning, Afternoon, and Evening sections. Each section includes simple health recommendations such as hydration, light exercise, rest, and relaxation techniques to help manage period days comfortably.
 
 #### Diagrams
 
