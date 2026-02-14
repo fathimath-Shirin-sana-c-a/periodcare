@@ -166,18 +166,33 @@ No data is stored permanently.
 All processing is done instantly on the server.
 The interface remains simple and easy to use.
 
+project demo
+video
+https://drive.google.com/file/d/1eMSrZtFohB6ee-w_qRX7VtZFQFFbSA6s/view?usp=sharing
 
----
+TEAM CONTRIBUTES
+fathimath Shirin sana CA 
 
-### For Hardware:
+•Designed overall project structure
+•Developed Flask backend (app.py)
+•Implemented:
+  °Period prediction logic
+  °Ovulation and fertile window calculation
+ °Phase detection algorithm
+•Created symptom handling logic
+•Developed product stock validation logic
+•Integrated routing for multiple pages
+•Managed GitHub repository setup and documentation
+EZANA T P
 
-#### Schematic & Circuit
+•Designed user interface (HTML + CSS)
+•Styled:
+  °Homepage (Prediction page)
+  °Symptoms page
+   °Product stock checklist page
+   °Full day planner page
+•Designed pastel theme and responsive layout
+•Structured navigation between pages
+•Created clean user experience and visual consistency
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-project demo video
 
