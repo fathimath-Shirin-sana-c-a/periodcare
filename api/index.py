@@ -161,6 +161,4 @@ def dayplanner():
 
     return render_template("dayplanner.html", schedule=schedule)
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+handler = app
